@@ -7,15 +7,12 @@
 #include <SPI.h>
 #include <MD_AD9833.h>
 
-#define ___firmware_version___ "Alpha"
+#define ___firmware_version___ "8.16"
 
 void lcdBegin(short col, short row);
 void printIntroAndVersion();
 void lcdColumn(uint8_t _line);
 void lcdRow(uint8_t _line);
-void lcdClear();
-void lcdPrint(String _content);
-void lcdPrintChar(char _a[10]);
 void Blink();
 void dataEncHandler(bool _a);
 void EncFresh();
